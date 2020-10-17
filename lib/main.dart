@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 // Uncomment lines 7 and 10 to view the visual layout at runtime.
 // import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   // debugPaintSizeEnabled = true;
@@ -75,6 +76,15 @@ class MyApp extends StatelessWidget {
       ),
     );
 
+    Widget awsomeIcon = Container(
+      child: IconButton(
+          // Use the FaIcon Widget + FontAwesomeIcons class for the IconData
+          icon: FaIcon(FontAwesomeIcons.gamepad),
+          onPressed: () {
+            print("Pressed");
+          }),
+    );
+
     return MaterialApp(
       title: 'Flutter layout demo',
       home: Scaffold(
@@ -92,6 +102,7 @@ class MyApp extends StatelessWidget {
             titleSection,
             buttonSection,
             textSection,
+            awsomeIcon,
           ],
         ),
       ),
