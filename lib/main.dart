@@ -77,12 +77,34 @@ class MyApp extends StatelessWidget {
     );
 
     Widget awsomeIcon = Container(
-      child: IconButton(
-          // Use the FaIcon Widget + FontAwesomeIcons class for the IconData
-          icon: FaIcon(FontAwesomeIcons.gamepad),
-          onPressed: () {
-            print("Pressed");
-          }),
+      child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+        IconButton(
+            // Use the FaIcon Widget + FontAwesomeIcons class for the IconData
+            icon: FaIcon(FontAwesomeIcons.smile),
+            onPressed: () {
+              print("Pressed");
+            },
+            color: color),
+        IconButton(
+            // Use the FaIcon Widget + FontAwesomeIcons class for the IconData
+            icon: FaIcon(FontAwesomeIcons.angry),
+            onPressed: () {
+              print("Pressed");
+            },
+            color: color),
+        IconButton(
+            // Use the FaIcon Widget + FontAwesomeIcons class for the IconData
+            icon: FaIcon(FontAwesomeIcons.sadTear),
+            onPressed: () {
+              print("Pressed");
+            }),
+        IconButton(
+            // Use the FaIcon Widget + FontAwesomeIcons class for the IconData
+            icon: FaIcon(FontAwesomeIcons.smileWink),
+            onPressed: () {
+              print("Pressed");
+            }),
+      ]),
     );
 
     return MaterialApp(
