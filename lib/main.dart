@@ -5,7 +5,12 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   // debugPaintSizeEnabled = true;
-  runApp(MyApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (context) => TaskViewModel(),
+      child: MyApp(),
+    ),
+  );
 }
 
 // 静的なコンテンツなのでStatelessWidget
