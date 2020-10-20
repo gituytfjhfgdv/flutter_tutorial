@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 // Uncomment lines 7 and 10 to view the visual layout at runtime.
 // import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'emotion_view_model.dart';
 
 void main() {
   // debugPaintSizeEnabled = true;
