@@ -9,7 +9,7 @@ void main() {
   // debugPaintSizeEnabled = true;
   runApp(
     ChangeNotifierProvider(
-      create: (context) => TaskViewModel(),
+      create: (context) => EmotionViewModel(),
       child: MyApp(),
     ),
   );
