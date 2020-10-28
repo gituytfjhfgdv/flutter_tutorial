@@ -2,18 +2,10 @@ import 'package:flutter/material.dart';
 // Uncomment lines 7 and 10 to view the visual layout at runtime.
 // import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:emotion_view_model.dart';
-import 'package:emotion.dart';
-import 'package:emotion_screen.dart';
 
 void main() {
   // debugPaintSizeEnabled = true;
-  runApp(
-    ChangeNotifierProvider(
-      create: (context) => EmotionViewModel(),
-      child: MyApp(),
-    ),
-  );
+  runApp(MyApp());
 }
 
 // 静的なコンテンツなのでStatelessWidget
@@ -122,12 +114,7 @@ class MyApp extends StatelessWidget {
           title: Text('lauout practice!'),
         ),
         body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Text('ドリルスタート！'),
-            ],
-          ),
+          child: awsomeIcon,
         ),
       ),
     );
