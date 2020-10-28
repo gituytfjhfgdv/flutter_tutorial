@@ -110,12 +110,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter layout demo',
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('lauout practice!'),
-        ),
-        body: Center(
-          child: awsomeIcon,
-        ),
+        body:
+            Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+          Text('今の気分をタップしてください！'),
+          Center(
+            child: awsomeIcon,
+          ),
+        ]),
       ),
     );
   }
